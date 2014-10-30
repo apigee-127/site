@@ -16,3 +16,8 @@ include:
 markdown: kramdown
 kramdown:
   input: GFM
+  use_coderay: true
+
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
