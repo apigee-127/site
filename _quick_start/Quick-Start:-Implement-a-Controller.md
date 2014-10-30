@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+quick_start: true
 ---
 
 ##Implementing an API controller

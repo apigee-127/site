@@ -2,6 +2,7 @@
 layout: default
 title: Adding OAuth 2.0
 permalink: /addiing-oauth/
+root: true
 ---
 
 

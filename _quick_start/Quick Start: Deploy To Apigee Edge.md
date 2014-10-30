@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+quick_start: true
 ---
 
 # Deploying your Apigee-127 project to Apigee Edge

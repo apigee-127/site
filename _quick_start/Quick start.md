@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: /about/
+permalink: /quick-start/about/
 ---
 
 The purpose of this Quick Start is to show you how easily and quickly you can get a simple API up and running using Apigee-127.

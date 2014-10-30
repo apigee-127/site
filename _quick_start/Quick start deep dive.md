@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-permalink: /about/
+title: Quick Start - Deep Dive
+permalink: /quick-start/deep-dive/
 ---
 
 ## About the "quick start" example

@@ -12,6 +12,8 @@ Apigee-127 is toolkit for modeling & building rich, enterprise-class APIs in Nod
 ## Contents
 {% for page in site.pages %}
   {% if page.title %}
+    {% if page.root %}
   <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+     {% endif %}
   {% endif %}
 {% endfor %}

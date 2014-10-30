@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+quick_start: true
 ---
 
 # Deploy Apigee-127 Projects to Heroku

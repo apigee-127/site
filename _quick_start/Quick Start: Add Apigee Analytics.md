@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+quick_start: true
 ---
 
 # Adding Apigee Edge Analytics to your API

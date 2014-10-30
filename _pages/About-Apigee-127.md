@@ -2,6 +2,7 @@
 layout: default
 title: About Apigee 127
 permalink: /about/
+root: true
 ---
 
 ## About Apigee 127

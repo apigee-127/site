@@ -2,6 +2,7 @@
 layout: default
 title: About
 permalink: /about/
+quick_start: true
 ---
 
 # Quick Start: Add Apigee OAuth 2.0 to the API

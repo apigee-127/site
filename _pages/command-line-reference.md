@@ -2,6 +2,7 @@
 layout: default
 title: CLI
 permalink: /cli/
+root: true
 ---
 
 # a127 reference
