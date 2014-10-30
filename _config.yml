@@ -6,6 +6,8 @@ url: "http://apigee-127.github.io"
 twitter_username: apigee
 github_username:  apigee-127
 
+highlighter: pygments
+
 include:
   - _pages
   - _quick_start

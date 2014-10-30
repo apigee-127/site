@@ -12,6 +12,7 @@ Apigee-127 projects all follow a pattern similar to the "hello world" implementa
 
 The project files are cloned directly from the `https://github.com/apigee-127/project-skeleton` repository on GitHub. This skeleton project contains all the files and internal wirings needed for a basic Apigee-127 project.
 
+```shell
 
     hello-world-api
         /api
@@ -25,7 +26,7 @@ The project files are cloned directly from the `https://github.com/apigee-127/pr
         app.js
         package.json
         README.md
-
+```
 
 
 ### The Swagger 2.0 API Model
