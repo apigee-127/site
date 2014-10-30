@@ -25,7 +25,12 @@ from Markdown documents.
 folder
 
 ## Publishing
-Build the project first
+GitHub will render Jekyll automatically. Pushing to `gh-pages` branch is all you
+need to do for publishing.
+
+
+If you are interested to see what generated website looks like build the project
+first
 ```shell
 jekyll build
 ```
