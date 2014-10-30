@@ -6,7 +6,9 @@ url: "www.a127.io"
 twitter_username: apigee
 github_username:  apigee-127
 
-include: ['_pages']
+include:
+  - _pages
+  - _quick_start
 
 # Build settings
 markdown: kramdown
