@@ -7,6 +7,7 @@ twitter_username: apigee
 github_username:  apigee-127
 
 highlighter: pygments
+pygments: true
 
 include:
   - _pages
