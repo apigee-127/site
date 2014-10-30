@@ -7,7 +7,6 @@ twitter_username: apigee
 github_username:  apigee-127
 
 highlighter: pygments
-pygments: true
 
 include:
   - _pages
@@ -17,8 +16,4 @@ include:
 markdown: kramdown
 kramdown:
   input: GFM
-  use_coderay: true
 
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline

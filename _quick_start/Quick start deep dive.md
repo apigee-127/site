@@ -45,7 +45,7 @@ This command launches the interactive Swagger editor, which loads the project's 
 
 Here is the entire hello-world app Swagger model. It conforms to the Swagger 2.0 specification, which is documented [here](https://github.com/reverb/swagger-spec/blob/master/versions/2.0.md). You'll notice there are several Apigee-127 specific extensions (`x-swagger-router-controller`, etc.) included in the model. These extensions are explained below.
 
-```yaml
+{% highlight yaml linenos %}
     swagger: 2
     info:
       version: 0.0.1
@@ -98,7 +98,7 @@ Here is the entire hello-world app Swagger model. It conforms to the Swagger 2.0
         properties:
           message:
             type: string
-```
+{% endhighlight %}
 
 #### The 'paths' object and Swagger extensions
 
@@ -106,7 +106,7 @@ The `paths:`  object specifies the API's resource paths, HTTP verb, query parame
 
 The `x-swagger-router-controller` extension maps a path to a controller file, where the HTTP operation's logic is implemented. For example, in the hello world app, the path `/hello` maps to a controller file `controller/hello_world.js`:
 
-```yaml
+{% highlight yaml %}
     paths:
       /hello:
         x-swagger-router-controller: hello_world
@@ -115,7 +115,7 @@ The `x-swagger-router-controller` extension maps a path to a controller file, wh
         get:
           description: "Returns 'Hello' to the caller"
           operationId: hello
-```
+{% endhighlight %}
 
 **Note:** The extension `x-swagger-router-controller` is a custom Apigee-127 extension to the Swagger model.
 
@@ -123,26 +123,26 @@ The `x-swagger-router-controller` extension maps a path to a controller file, wh
 
 When a request is received, Apigee-127 looks at the endpoint (`/hello`) and routes the request to a controller file. In this example, the `controller/hello_world.js` implementation retrieves a query parameter sends back a "hello world" response to the caller:
 
-```javascript
+{% highlight javascript %}
     function hello(req, res) {
       var name = req.swagger.params.name.value;
       var hello = name ? util.format('Hello, %s', name) : 'Hello, stranger!';
       res.json(hello);
     }
-```
+{% endhighlight %}
 
 ### The main Node.js app and Apigee-127 middleware
 
 The main `app.js` is a simple Express app consisting of these six lines:
 
-```javascript
+{% highlight javascript %}
     'use strict';
     var a127 = require('a127-magic');
     var express = require('express');
     var app = express();
     app.use(a127.middleware());
     app.listen(process.env.PORT || 10010);
-```
+{% endhighlight %}
 The `a127-magic` module loads several Apigee-127 middleware modules. These modules perform tasks like Swagger specification validation, endpoint routing, and volos configuration:
 
    * a127-magic
@@ -168,24 +168,24 @@ Provides middleware functions for:
 * [volos-swagger](https://github.com/apigee-127/volos/tree/master/swagger)
 Lets you configure volos features like caching and OAuth directly in the Swagger model file. For example, this stanza configures the volos "in memory" caching feature for your API.
 
-```yaml
+{% highlight yaml %}
         x-volos-resources:
             cache:
             provider: "volos-cache-memory"
             options:
                 - "memCache"
                 - ttl: 10000
-```
+{% endhighlight %}
 Similarly, you could configure caching using Redis or Apigee. Refer to the [volos-swagger](https://github.com/apigee-127/volos/tree/master/swagger) documentation for more information.
 
 The pattern:
 
-```javascript
+{% highlight javascript %}
     var a127 = require('a127-magic');
     app.express=require('express');
     var app = express();
     app.use(a127.middleware());
-```
+{% endhighlight %}
 is all you need to add this support to your application. Behind the scenes, the "wiring" and interaction is driven through the Swagger configuration file. The basic programming model is:
 
 1. Model your API using the Swagger editor. Define the API endpoints, request verbs, and optionally add features like volos-based caching, quota management, and OAuth.
