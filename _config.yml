@@ -1,7 +1,7 @@
 # Site settings
 title: A127
 description: Apigee-127 website
-baseurl: "/site"
+baseurl: ""
 url: "http://apigee-127.github.io"
 twitter_username: apigee
 github_username:  apigee-127
@@ -11,6 +11,7 @@ highlighter: pygments
 include:
   - _pages
   - _quick_start
+  - images
 
 # Build settings
 markdown: kramdown
