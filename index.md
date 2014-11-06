@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1 style="font-size: 300px">A127</h1>
+<h1 style="font-size: 200px">A127</h1>
 
 
 ## Overview
