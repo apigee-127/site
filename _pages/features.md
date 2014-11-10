@@ -8,9 +8,9 @@ permalink: /features/
   <div class="container">
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="/">Overview</a></li>
-        <li class="active"><a href="/features">Features</a></li>
-        <li><a href="/resources">Resources</a></li>
+        <li><a href="{{'/' | prepend: site.baseurl }}">Overview</a></li>
+        <li class="active"><a href="{{'/features' | prepend: site.baseurl }}">Features</a></li>
+        <li><a href="{{'/resources' | prepend: site.baseurl }}">Resources</a></li>
       </ul>
     </div>
   </div>

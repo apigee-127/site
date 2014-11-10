@@ -1,7 +1,7 @@
 # Site settings
 title: A127
 description: Apigee-127 website
-baseurl: ""
+baseurl: "/site"
 url: "http://apigee-127.github.io"
 twitter_username: apigee
 github_username:  apigee-127

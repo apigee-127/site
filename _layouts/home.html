@@ -4,7 +4,7 @@
   <body>
     <div class="navbar">
       <a class="navbar-brand" href="#">
-        <img src="images/a127-logo.svg" alt="">
+        <img src="{{'/images/a127-logo.svg' | prepend: site.baseurl }}" alt="">
       </a>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -23,7 +23,7 @@
           </div>
           <div class="col-md-6">
             <div class="thumbnail">
-              <img src="/images/terminal-1.png" alt="Terminal">
+              <img src="{{'/images/terminal-1.png' | prepend: site.baseurl }}" alt="Terminal">
             </div>
           </div>
         </div>

@@ -5,9 +5,9 @@ layout: home
   <div class="container">
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Overview</a></li>
-        <li><a href="/features">Features</a></li>
-        <li><a href="/resources">Resources</a></li>
+        <li class="active"><a href="{{'/' | prepend: site.baseurl }}">Overview</a></li>
+        <li><a href="{{'/features' | prepend: site.baseurl }}">Features</a></li>
+        <li><a href="{{'/resources' | prepend: site.baseurl }}">Resources</a></li>
       </ul>
     </div>
   </div>
@@ -25,7 +25,6 @@ layout: home
       </p>
     </div>
   </div>
-
   <div class="row home-row">
     <h1 class="text-center">A powerful tool for doing API design</h1>
     <div class="col-md-6">
@@ -48,7 +47,6 @@ layout: home
       <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg" alt="">
     </div>
   </div>
-
   <div class="row home-row">
     <h1 class="text-center">Kitten-driven API development</h1>
     <div class="col-md-6">
