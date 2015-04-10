@@ -1,3 +1,4 @@
+<!-- Disable for now
 ---
 layout: home
 ---
@@ -62,3 +63,4 @@ layout: home
     </div>
   </div>
 </div>
+-->
